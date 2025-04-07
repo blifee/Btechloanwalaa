@@ -1,0 +1,62 @@
+.certificates-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .award-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .award-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    width: 280px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .award-box img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .award-box h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Slick Dots Customization */
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    z-index: 1;
+    color: #007bff;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #0056b3;
+  }
+  

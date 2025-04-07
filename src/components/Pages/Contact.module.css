@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  align-items: end;
+}
+.top_btn {
+  display: flex;
+  gap: 32px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact_form form {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.form_control input {
+  height: 40px;
+  padding: 0 8px;
+}
+.form_control textarea {
+  padding: 8px;
+}
+
+.form_control label {
+  font-size: 14px;
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact_form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact_image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form_control label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form_control input,
+.form_control textarea {
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff; /* 🛠 No more transparent */
+  color: #333;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form_control input:focus,
+.form_control textarea:focus {
+  border-color: #007bff;
+}
+
