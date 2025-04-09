@@ -15,7 +15,9 @@ const hexagons = [
 
 const HexagonGrid = () => {
   return (
-    <section className="bg-blue-500 py-12 text-center">
+    <section data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"className="bg-blue-500 py-12 text-center">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-white mb-6">The B-Tech Lonwala's Edge</h2>
         <img src="/src/assets/Line.svg" alt="Line"

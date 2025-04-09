@@ -11,7 +11,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="bg-sky-400 text-white py-16">
+    <div  data-aos="flip-right" className="bg-sky-400 text-white py-16">
       <h2 className="text-2xl font-bold text-center mb-10">Moments to Remember</h2>
       <div className="relative max-w-4xl mx-auto px-4">
         {/* Vertical Line */}

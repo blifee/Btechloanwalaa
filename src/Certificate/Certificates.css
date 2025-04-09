@@ -1,62 +1,104 @@
 .certificates-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.award-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.award-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.award-box h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .certificates-section {
+    padding: 40px 15px;
   }
-  
-  .award-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-  }
-  
+
   .award-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-    width: 280px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+    max-width: 90%;
+    max-height: 230px;
   }
-  
-  .award-box img {
-    width: 100%;
-    border-radius: 8px;
-    height: 150px;
-    object-fit: contain;
-  }
-  
+
   .award-box h4 {
-    margin-top: 10px;
-    font-size: 16px;
-    text-align: center;
+    font-size: 14px;
   }
-  
-  /* Slick Dots Customization */
-  .slick-dots {
-    bottom: -30px;
+
+  .award-box img {
+    height: 130px;
   }
-  
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: #007bff;
+}
+
+@media (max-width: 480px) {
+  .certificates-section {
+    padding: 30px 10px;
   }
-  
-  .slick-prev,
-  .slick-next {
-    font-size: 24px;
-    z-index: 1;
-    color: #007bff;
+
+  .award-box {
+    padding: 10px;
+    max-width: 100%;
+    max-height: 220px;
   }
-  
-  .slick-prev:hover,
-  .slick-next:hover {
-    color: #0056b3;
+
+  .award-box h4 {
+    font-size: 13px;
   }
-  
+
+  .award-box img {
+    height: 120px;
+  }
+}
+
+/* Slick Dots Customization */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  z-index: 1;
+  color: #007bff;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #0056b3;
+}
