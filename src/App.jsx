@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Link,  } from "react-router-dom";
 import HomePage from "./components/Pages/HomePage";
 import ContactForm from "./components/Pages/ContactForm";
 import Footer from "./components/Footer/Footer";
@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar/Navbar";
 import './index.css'; // Bas itna
 import About from "./components/Pages/About";
 import Login from "./components/Pages/Login";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +20,8 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter>
+    {/* <Link to="/partner"></Link> */}
       <Navbar />
       <main className="overflow-x-hidden bg-white text-dark">
         <Routes>
@@ -29,11 +29,12 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/login" element={<Login />} />  {/* Login Route */}
+          <Route path="/partner" element={<Login/>}/>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 

@@ -30,12 +30,14 @@ const Navbar = () => {
   return (
     <nav className="w-full py-6 bg-purple-900 shadow-lg border border-purple-200 relative z-50">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
-      <img
-  src={LOGO}
-  alt="Logo"
-  className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain transition-transform duration-300"
-/>
-
+        <div id="logo-container">
+          <img
+            src={LOGO}
+            alt="Logo"
+            id="logo-style"
+            className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain transition-transform duration-300"
+          />
+        </div>
 
         {/* Desktop Menu */}
         <ul
@@ -161,7 +163,10 @@ const Tab = ({ menu, setCursor, setIsLoanHovered }) => {
         {menu.title}
         {menu.title === "Loans" && (
           <span className="ml-1">
-            <FaChevronDown size={12} className="transition-transform duration-200" />
+            <FaChevronDown
+              size={12}
+              className="transition-transform duration-200"
+            />
           </span>
         )}
       </a>
