@@ -1,22 +1,64 @@
-.gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #fccb90;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-  }
-  
-  @media (min-width: 768px) {
-    .gradient-form {
-      height: 100vh !important;
-    }
-  }
-  @media (min-width: 769px) {
-    .gradient-custom-2 {
-      border-top-right-radius: .3rem;
-      border-bottom-right-radius: .3rem;
-    }
-  }
+/* App.css */
+
+body {
+  background: linear-gradient(135deg, #a78bfa, #c084fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #6b21a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4c1d95;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider::before {
+  margin-right: .5em;
+}
+.divider::after {
+  margin-left: .5em;
+}
+
+.MDBBtn {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.MDBBtn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.MDBInput input {
+  border-radius: 8px;
+}

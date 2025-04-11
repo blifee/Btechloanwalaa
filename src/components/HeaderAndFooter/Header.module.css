@@ -1,0 +1,11 @@
+/* Header Style */
+#header-container {
+  border: 3px solid red;
+  background-color: #000 !important;
+  margin-bottom: 2px;
+}
+
+/* Logo Container */
+#logo-container {
+  border: 2px solid rgb(37, 121, 16);
+}

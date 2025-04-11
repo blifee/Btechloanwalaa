@@ -30,14 +30,14 @@ const Navbar = () => {
   return (
     <nav className="w-full py-6 bg-purple-900 shadow-lg border border-purple-200 relative z-50">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
-        <div id="logo-container">
-          <img
-            src={LOGO}
-            alt="Logo"
-            id="logo-style"
-            className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain transition-transform duration-300"
-          />
-        </div>
+  {/* Logo */}
+  <div className="flex-shrink-0 max-h-20 overflow-hidden">
+    <img
+      src={LOGO}
+      alt="Logo"
+      className="h-16 sm:h-20 md:h-24 object-contain max-w-full"
+    />
+  </div>
 
         {/* Desktop Menu */}
         <ul
